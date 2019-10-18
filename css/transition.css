@@ -1,0 +1,21 @@
+body{
+    background-color: #80397a
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    margin: 0 auto;
+    position: relative;
+    top: 300px;
+    transition-duration: 3s;
+    transition-property:  all;
+}
+
+.box:hover {
+    background-color: sandybrown;
+    border-radius: 50%;
+    transform: rotateX(180deg);
+    /*transform: scale(2);*/
+}

@@ -1,0 +1,30 @@
+body{
+    background-color: darkcyan;
+}
+
+.main-container{
+    height: 800px;
+    width: 800px;
+    border: 2px solid red;
+    margin: 0 auto;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    animation-name: moveBox;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+    position: relative;
+}
+
+@keyframes moveBox {
+   0%{left: 0; top: 0; background-color: royalblue;border-radius: 0%;}
+   25%{left: 75%; top: 0;background-color: red;border-radius: 25%;}
+   50%{left: 75%; top: 75%; background-color: saddlebrown;border-radius: 50%;}
+   75%{left: 0%; top: 75%; background-color: seagreen;border-radius: 75%;}
+   100%{left: 0%; top: 0%; background-color: yellow;border-radius: 100%;}
+}
